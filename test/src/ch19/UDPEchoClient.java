@@ -21,7 +21,7 @@ public class UDPEchoClient {
 			//스트링.getBytes(): 스트링 => 바이트 배열
 			//new String(바이트배열): 바이트배열 ==>스트링
 			byte buffer[] = str.getBytes();//스트링을 바이트배열로 변환(UDP 통신에서는 바이트배열로 전송해야함)
-			//데이터그램패킷 객체 생성(전송할 바이트배열, 배열크기, ip주소,서버포트번호)
+			//데이터그램패킷 객체 생성(전송할 바이트배열, 배열크기, ip 주소,서버포트번호)
 			DatagramPacket dp = new DatagramPacket (buffer, buffer.length, ia, SERVERPORT);
 			ds.send(dp);//서버에 전송
 			buffer = new byte[512];

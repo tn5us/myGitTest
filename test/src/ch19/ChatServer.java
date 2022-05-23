@@ -49,20 +49,13 @@ public class ChatServer {
 			System.out.println("서버님 입력하세요(종료:quit) :");
 			send = sc.nextLine();
 			writer.println(send);//메시지 보내기
-			if(send.equals("quit")) break;
-			
-		}
-		
-		
-		
-	
+			if(send.equals("quit")) break;			
+		}//end while()
 	//리소스 정리
 	sc.close();
 	writer.close();
 	reader.close();
 	clientSocket.close();
 	serverSocket.close();
-	
-	
-}
+	}
 }

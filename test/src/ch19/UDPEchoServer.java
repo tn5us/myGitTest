@@ -37,12 +37,9 @@ public class UDPEchoServer {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	public static void main(String[] args) throws Exception{
-		new UDPEchoServer(3000);//서버측 포트 번호셋팅
-	
+		new UDPEchoServer(3000);//서버측 포트 번호셋팅	
 	}
-
 }
