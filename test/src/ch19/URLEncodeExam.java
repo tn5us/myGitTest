@@ -10,10 +10,10 @@ public class URLEncodeExam {
 	
 	public static void main(String[] args) {
 		try {
-			String str= "박서함";
+			String str= "김수현";
 			//URLEncoder.encode(인코딩할 문자열, "인코딩형식")
 			System.out.println(URLEncoder.encode(str, "utf-8"));
-			System.out.println(URLDecoder.decode("%EB%B0%95%EC%84%9C%ED%95%A8", "utf-8"));
+			System.out.println(URLDecoder.decode("%EA%B9%80%EC%88%98%ED%98%84", "utf-8"));
 					
 		} catch (Exception e) {
 			e.printStackTrace();
